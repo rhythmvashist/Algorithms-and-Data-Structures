@@ -9,6 +9,7 @@
 
 using namespace std;
 
+// the class represents the edge of the graph with two nodes and weight of the edge
 class Edge{
 public:
     Edge(int f,int s ,int w){
@@ -34,6 +35,7 @@ private:
 };
 
 
+// this method helps to print the adjacent vector list created from the graph 
 void printList(vector<vector<Edge> >ve){
     for(int i=0;i<ve.size();i++){
         for(int j=0;j<ve[i].size();j++){
@@ -43,7 +45,6 @@ void printList(vector<vector<Edge> >ve){
     }
     cout<<endl;
 }
-
 
 
 bool check(vector<Edge> list,int sec){
@@ -91,7 +92,9 @@ void traversal(vector<vector<Edge> > &ve,int id,bool isvisited[]){
         }
     }
 }
+
 // try to traverse the tree
+
 bool isJoint(vector<vector<Edge> > ve,int no){
     bool visited[no];
     initilaiseBool(visited,no);
@@ -222,6 +225,7 @@ vector<vector<Edge> > generateGraph(string file,vector<Edge> &list){
     myfile>>no;
     cout<<no<<endl;
     vector<vector<Edge>> ve(no);
+
     while(myfile>>first>>sec>>wt){
             if(!check(ve[first],sec)&&first!=sec){
                 Edge e1(first,sec,wt);
