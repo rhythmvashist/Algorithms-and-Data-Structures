@@ -5,6 +5,8 @@
 #include <queue>
 #include <algorithm>
 
+// this code is used to find the minimum spanning tree  using reverse krushkal algorithm
+
 using namespace std;
 
 class Edge{
@@ -31,6 +33,7 @@ private:
     int weight;
 };
 
+
 void printList(vector<vector<Edge> >ve){
     for(int i=0;i<ve.size();i++){
         for(int j=0;j<ve[i].size();j++){
@@ -40,6 +43,9 @@ void printList(vector<vector<Edge> >ve){
     }
     cout<<endl;
 }
+
+
+
 bool check(vector<Edge> list,int sec){
     for(int i=0;i<list.size();i++){
         if(list.at(i).getS()==sec){
@@ -54,6 +60,7 @@ struct desc{
             return node1.getW()<node2.getW();
     }
 };
+
 
 vector<Edge> removeElement(vector<Edge> list,int counter/*,Edge temp*/){
     vector<Edge> newList;
@@ -90,7 +97,6 @@ bool isJoint(vector<vector<Edge> > ve,int no){
     initilaiseBool(visited,no);
 
     traversal(ve,1,visited);
-
 
     for(int i=0;i<no;i++){
         if(!visited[i]){
