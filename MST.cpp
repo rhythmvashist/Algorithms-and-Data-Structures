@@ -246,7 +246,5 @@ int main(){
     int no=ve.size();
 
     reverseKurshal(ve,list,no);
-
-    cout << "Hello world!" << endl;
     return 0;
 }
