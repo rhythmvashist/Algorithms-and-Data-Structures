@@ -1,3 +1,7 @@
+/*
+
+In this fule we implement the generic Binary search tree using the Node class 
+*/
 #ifndef BST_H
 #define BST_H
 #include <iostream>
@@ -103,17 +107,6 @@ Node<T>* BST<T>::insert(T x, Node<T>* r) {
 	return r;
 }
 
-template <typename T>
-Node<T>* BST<T>::sarr2bst(vector<T> arr, int s, int e) {
-	if (s > e) {
-		return nullptr;
-	}
-	int mid = (e + s) / 2;
-	Node<T>* r = new Node<T>(arr[mid], nullptr, nullptr);
-	r->left = sarr2bst(arr, s, mid - 1);
-	r->right = sarr2bst(arr, mid + 1, e);
-	return r;
-}
 
 template<typename T>
 void BST<T>::inorder(Node<T>* r) {
@@ -123,6 +116,8 @@ void BST<T>::inorder(Node<T>* r) {
 		inorder(r->right);
 	}
 }
+
+
 
 template<typename T>
 Node<T>* BST<T>::search(Node<T>* r, T info) {
@@ -137,6 +132,20 @@ Node<T>* BST<T>::search(Node<T>* r, T info) {
 	}
 	return nullptr;
 }
+
+
+template <typename T>
+Node<T>* BST<T>::sarr2bst(vector<T> arr, int s, int e) {
+	if (s > e) {
+		return nullptr;
+	}
+	int mid = (e + s) / 2;
+	Node<T>* r = new Node<T>(arr[mid], nullptr, nullptr);
+	r->left = sarr2bst(arr, s, mid - 1);
+	r->right = sarr2bst(arr, mid + 1, e);
+	return r;
+}
+
 
 
 #endif // BST_H
