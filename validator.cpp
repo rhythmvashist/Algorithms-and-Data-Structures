@@ -1,8 +1,7 @@
 
 /*
 @auhtor:Rhyhtm Vashist
-
-this file uses stack to validate the file of html
+this file read a html file and with the hep of stack checks if the file is valid or not 
 */
 
 #include <iostream>
@@ -10,7 +9,8 @@ this file uses stack to validate the file of html
 #include <stack>
 using namespace std;
 
-/* To convert uppercase  characters in  a string to lowercase */
+
+/* This function convert  all the uppercase  characters in  a string to lowercase */
 string toLowerCase(string in){
     string temp="";
     for(int i=0;i<in.length();i++){
@@ -23,7 +23,7 @@ string toLowerCase(string in){
     return temp;
 }
 
-/* this method returns  a bool value whenver a passed string a HTML sematics tag*/
+/* this method returns  a bool value whenver a passed string is a HTML sematics tag*/
 bool isTag(string str,bool arr[2]) {
 	bool result = false;
     bool isOpen = false;
@@ -53,7 +53,7 @@ bool isTag(string str,bool arr[2]) {
 }
 
 
-/*  this method returns a string by returning the string that is enclosed inside the the brackets*/
+/*  this method returns the html tag by returning the characte that is enclosed inside the the brackets*/
 string gettagName(string str){
     string input="";
     bool starting=false;

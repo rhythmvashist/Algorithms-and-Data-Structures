@@ -1,3 +1,4 @@
+/* this file is used to  test the BST  class*/
 #include <iostream>
 #include <vector>
 #include "BST.h"
@@ -5,6 +6,21 @@
 #include <stack>
 
 using namespace std;
+
+
+
+template <typename T>
+void printlist(vector<T> list){
+    for(int i=0;i<list.size();i++){
+        cout<<list[i]<<" ";
+    }
+    cout<<endl;
+}
+
+template <typename T>
+void printBT(BST<T> bt){
+    bt.inorder(bt.getRoot());
+}
 
 // this method get a numbre a generates a list of numbers ranging from [-n,n]
 
@@ -18,14 +34,6 @@ vector<int> genData(int n){
 }
 
 template <typename T>
-void printlist(vector<T> list){
-    for(int i=0;i<list.size();i++){
-        cout<<list[i]<<" ";
-    }
-    cout<<endl;
-}
-
-template <typename T>
 BST<T> makeBST(vector<T> list){
     BST<T> btree;
     Node<T>* root=btree.getRoot();
@@ -35,10 +43,6 @@ BST<T> makeBST(vector<T> list){
     return btree;
 }
 
-template <typename T>
-void printBT(BST<T> bt){
-    bt.inorder(bt.getRoot());
-}
 
 template <typename T>
 int depth(Node<T>* node){
