@@ -1,4 +1,4 @@
-/* this file is used to  test the BST  class*/
+/* This file is used to  test the BST  class */
 #include <iostream>
 #include <vector>
 #include "BST.h"
@@ -6,7 +6,6 @@
 #include <stack>
 
 using namespace std;
-
 
 
 template <typename T>
@@ -151,6 +150,7 @@ int main(){
     Node<char>* temp=bt4.getRoot();
 
     InfixPostfixExpr(temp) ;
+    
 
 
     return 0;

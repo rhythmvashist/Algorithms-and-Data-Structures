@@ -1,4 +1,3 @@
-
 /*
 @auhtor:Rhyhtm Vashist
 this file read a html file and with the hep of stack checks if the file is valid or not 
@@ -40,8 +39,9 @@ bool isTag(string str,bool arr[2]) {
 		}
 		else if (str[i] == '>') {
 			isClose = true;
+            
 		}
-	}
+	} 
 	if (isOpen && isClose) {
 		result = true;
 		arr[0] = true;
