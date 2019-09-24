@@ -1,5 +1,5 @@
 /*
- * name : rhythm vashist
+ * name : Rhythm vashist
  */
 #include <iostream>
 #include <ctime>
@@ -145,7 +145,6 @@ void takeinput(int &xcor,char &ycor){
     cout<<"Enter the co-ordinate of the index you want to hit first enter  the x-cordinate and the then  alphabet denoting the  y codinate   ";
     cin>>xcor>>ycor;
     ycor=touppercase(ycor);
-
 }
 
 /**
