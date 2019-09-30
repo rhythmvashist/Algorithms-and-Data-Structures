@@ -13,7 +13,7 @@ const int COLM=6;
 
 /** This function takes two index of the array and swap the number on the corresponding indexes
  *
- * @param arr  : the array in which numbers are ti be swaped
+ * @param arr : the array in which numbers are ti be swaped
  * @param initial : the index of the first number
  * @param fin : the index  of the second number
  */
@@ -24,7 +24,6 @@ void swap(int arr[],int initial,int fin){
 }
 
 /** this array is used to print the array
- *
  * @param arr
  * @param n
  */

@@ -25,7 +25,6 @@ bool satisfyHeap(int arr[],int root){
 	int rootelem=arr[root];
 	int leftNode=arr[2*root+1];
 	int rightNode=arr[2*root+2];
-  
 	if(rootelem>leftNode&&rootelem>rightNode){
 		return true;
 	}
