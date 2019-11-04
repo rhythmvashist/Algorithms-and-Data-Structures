@@ -7,13 +7,19 @@
 # s can be split into "RL", "RRLL", "RL", "RL", each substring contains same number of 'L' and 'R'.
 
 def balancedStringSplit(s):
-  print(s)
+  counter = 0
+  ans=0
   for index,character in enumerate(s):
-    counter = 0
-    if(index+1)<len(s):
-      print(s[index],s[index+1])
-    #print(index,character)
+    if character =='R':
+      counter=counter+1
+    else:
+      counter=counter-1
+  
+    if counter==0:
+      ans=ans+1
+ 
+  return ans
+    
 
-
-
-balancedStringSplit("RLRLLLL")
+ans = balancedStringSplit("RLRL")
+print(ans)
