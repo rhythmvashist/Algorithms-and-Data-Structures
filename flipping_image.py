@@ -10,3 +10,19 @@
 # Output: [[1,0,0],[0,1,0],[1,1,1]]
 # Explanation: First reverse each row: [[0,1,1],[1,0,1],[0,0,0]].
 # Then, invert the image: [[1,0,0],[0,1,0],[1,1,1]]
+
+def flipAndInvertImage(self, A):
+        """
+        :type A: List[List[int]]
+        :rtype: List[List[int]]
+        """
+
+        for i in len(A):
+          
+          for j in len(A[i]):
+            if A[i][j]==0:
+              A[i][j]=1
+            else:
+              A[i][j]=0
+
+        return A
