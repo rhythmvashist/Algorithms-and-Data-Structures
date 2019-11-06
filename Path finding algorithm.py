@@ -30,13 +30,17 @@ visited_and_distance = [[0, 0], [0, sys.maxsize], \
 for vertex in range(number_of_vertices):
   # Finding the next vertex to be visited.
   to_visit = to_be_visited()
+  
   for neighbor_index in range(number_of_vertices):
+
     # Calculating the new distance for all unvisited neighbours
     # of the chosen vertex.
+
     if vertices[to_visit][neighbor_index] == 1 and \
      visited_and_distance[neighbor_index][0] == 0:
       new_distance = visited_and_distance[to_visit][1] \
       + edges[to_visit][neighbor_index]
+
       # Updating the distance of the neighbor if its current distance
       # is greater than the distance that has just been calculated
       if visited_and_distance[neighbor_index][1] > new_distance:

@@ -11,3 +11,5 @@
 
 
 def generateParenthesis(self, n: int) -> List[str]:
+  print("generate paranthesis")
+  
