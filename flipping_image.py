@@ -17,7 +17,7 @@ def flipAndInvertImage(self, A):
         :rtype: List[List[int]]
         """
 
-        for i in len(A):
+        for i in len(A):        
           
           for j in len(A[i]):
             if A[i][j]==0:

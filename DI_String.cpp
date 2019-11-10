@@ -10,7 +10,7 @@
 
 // Input: "IDID"
 // Output: [0,4,1,3,2]
-
+#include <iostream>
 #include <vector>
 
 class Solution {
