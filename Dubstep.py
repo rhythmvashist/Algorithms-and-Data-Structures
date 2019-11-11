@@ -1,0 +1,12 @@
+
+# input
+# WUBWUBABCWUB
+# output
+# ABC 
+# input
+# WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB
+# output
+# WE ARE THE CHAMPIONS MY FRIEND 
+
+def dub_step(str):
+  

@@ -10,8 +10,7 @@ def main():
       prod=prod*int(numtostr[j-1:j])
       if prod>maxprod:
         maxprod=prod
-  
-
+        
   print (maxprod)
 
 main()
