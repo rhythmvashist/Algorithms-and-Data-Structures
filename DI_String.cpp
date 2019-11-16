@@ -16,10 +16,9 @@
 class Solution {
 public:
     vector<int> diStringMatch(string S) {
-        int len=S.length();
         vector<int> cont;
         int low=0;
-        int high=len;
+        int high=S.length();;
         
         for(int i=0;i<len;i++){
             if(S[i]=='I'){
