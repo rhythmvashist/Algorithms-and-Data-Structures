@@ -8,6 +8,13 @@ import sys
 
 # Complete the climbingLeaderboard function below.
 def climbingLeaderboard(scores, alice):
+  print("done")
+  print(scores)
+  for i in range(1,scores):
+    print (i)
+
+
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
