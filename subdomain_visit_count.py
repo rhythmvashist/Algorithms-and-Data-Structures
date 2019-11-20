@@ -15,10 +15,21 @@
 # We will visit "google.mail.com" 900 times, "yahoo.com" 50 times, "intel.mail.com" once and "wiki.org" 5 times. For the subdomains, we will visit "mail.com" 900 + 1 = 901 times, "com" 900 + 50 + 1 = 951 times, and "org" 5 times.
 
 
-class Solution:
+class Solution(object):
     def subdomainVisits(self, cpdomains: List[str]) -> List[str]:
         """
         :type cpdomains: List[str]
         :rtype: List[str]
         """
+        ans = collections.Counter()
+        for domain in cpdomains:
+            count, domain = domain.split()
+            count = int(count)
+            frags = domain.split('.')
+            for i in xrange(len(frags)):
+                ans[".".join(frags[i:])] += count
+
+        return ["{} {}".format(ct, dom) for dom, ct in ans.items()]
+
+
         
