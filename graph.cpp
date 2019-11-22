@@ -1,6 +1,6 @@
 /*
   @auhtor:Rhythm Vashist
-  
+
 // this file implemennts spare undirectd weighted graph and dense direted weighted graph using adjacent matrix and adjacent list 
 */
 
@@ -150,8 +150,6 @@ void makeDenseDWG(int n){
             int s=rand()%n;
             int w=(rand()%(9*n))+n;
             // checks if the edge is already presen in the list
-
-
            /*if(!checkpresence(ve,f, s)&&f!=s){
                 Edge e1(f,s,w);
                 ve.push_back(e1);
