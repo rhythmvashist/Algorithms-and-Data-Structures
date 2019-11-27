@@ -1,26 +1,49 @@
-// Write a program that outputs the string representation of numbers from 1 to n.
+/*
+Write a program that outputs the string representation of numbers from 1 to n.
 
-// But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
+But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
 
-// Example:
+Example:
 
-// n = 15,
+n = 15,
 
-// Return:
-// [
-//     "1",
-//     "2",
-//     "Fizz",
-//     "4",
-//     "Buzz",
-//     "Fizz",
-//     "7",
-//     "8",
-//     "Fizz",
-//     "Buzz",
-//     "11",
-//     "Fizz",
-//     "13",
-//     "14",
-//     "FizzBuzz"
-// ]
+Return:
+[
+    "1",
+    "2",
+    "Fizz",
+    "4",
+    "Buzz",
+    "Fizz",
+    "7",
+    "8",
+    "Fizz",
+    "Buzz",
+    "11",
+    "Fizz",
+    "13",
+    "14",
+    "FizzBuzz"
+]
+*/
+
+import java.util.stream.IntStream;
+ 
+public class FizzBuzz {
+    public static void main(String[] args) {
+        fizzBuzzBeforeJava8(100);
+    }
+ 
+    private static void fizzBuzzBeforeJava8(int num) {
+        for (int i = 1; i <= num; i++) {
+            if (((i % 5) == 0) && ((i % 7) == 0)) // Is it a multiple of 5 & 7?
+                System.out.println("fizzbuzz");
+            else if ((i % 5) == 0) // Is it a multiple of 5?
+                System.out.println("fizz");
+            else if ((i % 7) == 0) // Is it a multiple of 7?
+                System.out.println("buzz");
+            else
+                System.out.println(i); // Not a multiple of 5 or 7
+        }
+    }
+}
