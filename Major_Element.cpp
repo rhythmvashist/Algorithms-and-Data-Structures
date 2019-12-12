@@ -20,8 +20,6 @@ public:
           index = i;
           count =1;
         }
-        
-
     }
     return nums[index];
 }

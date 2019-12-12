@@ -1,17 +1,15 @@
 /*
 Given a list of numbers and a number k, return whether any two numbers from the list add up to k.
-
 For example, given [10, 15, 3, 7] and k of 17, return true since 10 + 7 is 17.
-*/
 
+*/
 # include <iostream>
 # include <vector>
 # include <algorithm>
 
 using namespace std;
 
-bool pair_exist(vector<int> A ,int sum){
-    
+bool pair_exist(vector<int> A ,int sum){    
     int l, r; 
     /* Sort the elements */
     sort(A.begin(),A.end());
@@ -37,7 +35,7 @@ int main(){
     cout<<"yes"<<endl;
   }
   else{
-    cout<<"no"<<endl;
+    cout<<"No"<<endl;
   }
   return 0;
 }
