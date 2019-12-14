@@ -18,26 +18,6 @@ public:
 
 class Solution {
 public:
-    
-    // vector<int> preorder(Node* root) {
-    //     vector<int> res;
-    //     prorder(root,res);
-    //     return res;
-    // }
-
-    // void prorder(Node*root ,vector<int> &rs){
-    //     if (root ==nullptr) 
-    //         return ;
-        
-    //     rs.push_back(root->val);
-    //     for(auto child: root->children){
-    //         if (child!=nullptr){
-    //             prorder(child,rs);   
-    //         }
-                
-    //     }
-    //     return;
-    // }
   
       vector<int> preorder(Node* root) {
         if(root==nullptr) 
