@@ -42,7 +42,6 @@ bool traverseAllEdges(const graph_t& graph, vector<Node>& nodes, edge_cb cb) {
       if (cb(nodes, u, v, w)) return false;
     }
   }
-
   return true;
 }
 
@@ -56,7 +55,6 @@ bool bellmanFord(const graph_t& graph, int src, int dst, vector<int>& path) {
   }
   
   nodes[src].d = 0;
-
   for (int i = 0; i < len; ++i) {
     traverseAllEdges(graph, nodes, relaxNode);
   }
@@ -69,7 +67,6 @@ bool bellmanFord(const graph_t& graph, int src, int dst, vector<int>& path) {
   path.push_back(dst);
 
   Node node = nodes[dst];
-
   while (node.p != -1) {
     path.insert(path.begin(), node.p);
     node = nodes[node.p];
