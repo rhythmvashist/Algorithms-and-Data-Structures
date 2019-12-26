@@ -53,7 +53,6 @@ bool bellmanFord(const graph_t& graph, int src, int dst, vector<int>& path) {
   for (int i = 0; i < len; ++i) {
     nodes[i] = Node();
   }
-  
   nodes[src].d = 0;
   for (int i = 0; i < len; ++i) {
     traverseAllEdges(graph, nodes, relaxNode);
@@ -77,7 +76,7 @@ bool bellmanFord(const graph_t& graph, int src, int dst, vector<int>& path) {
 
 int main() {
   graph_t graph(5, edges_t(3));
-
+  
   graph[0] = {{1, 6}, {3, 7}};
   graph[1] = {{2, 5}, {3, 8}, {4, -4}};
   graph[2] = {{1, -2}};
@@ -85,7 +84,7 @@ int main() {
   graph[4] = {{0, 2}, {2, 7}};
 
   vector<int> path;
-
+  
   if (bellmanFord(graph, 0, 2, path)) {
     for (const int& v : path) {
       cout << v << ' ';
