@@ -5,13 +5,15 @@
 // If S[i] == "I", then A[i] < A[i+1]
 // If S[i] == "D", then A[i] > A[i+1]
  
-
 // Example 1:
 
 // Input: "IDID"
 // Output: [0,4,1,3,2]
 #include <iostream>
 #include <vector>
+#include <string>
+
+using namespace std;
 
 class Solution {
 public:
@@ -20,7 +22,7 @@ public:
         int low=0;
         int high=S.length();;
         
-        for(int i=0;i<len;i++){
+        for(int i=0;i<high;i++){
             if(S[i]=='I'){
                 cont.push_back(low++);
             }
