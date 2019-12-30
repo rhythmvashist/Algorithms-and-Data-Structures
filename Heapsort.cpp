@@ -5,7 +5,6 @@
 #include <iostream>
 using namespace std;
 
-
 //this function is used to swap the elements passed at the index.
 void swap(int arr[],int parent,int child){
 	int temp=arr[child];
@@ -53,7 +52,6 @@ void makeHeap(int arr[],int size,int rootIndex){
 		swap(arr,root,rootIndex);
 		makeHeap(arr,size,root);
 	}
-
 }
 
 // this method takes the index and returns the root element of the element at that index
