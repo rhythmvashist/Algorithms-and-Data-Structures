@@ -22,7 +22,6 @@ def dub_step(str):
       out+=' '
     else:
       j=j+1
-
       out+=str[j]
 
   print(out)
