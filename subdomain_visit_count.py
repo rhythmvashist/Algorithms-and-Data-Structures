@@ -30,6 +30,3 @@ class Solution(object):
                 ans[".".join(frags[i:])] += count
 
         return ["{} {}".format(ct, dom) for dom, ct in ans.items()]
-
-
-        
