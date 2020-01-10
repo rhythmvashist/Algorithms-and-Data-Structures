@@ -4,7 +4,6 @@ def judgeCircle(self, moves):
   rtype: bool      
   """
   x=0
-
   y=0
    moves=moves.upper()
         for char in moves:
