@@ -7,6 +7,7 @@ def to_be_visited():
   global visited_and_distance
   v = -10
   # Choosing the vertex with the minimum distance
+  
   for index in range(number_of_vertices):
     if visited_and_distance[index][0] == 0 \
       and (v < 0 or visited_and_distance[index][1] <= \
