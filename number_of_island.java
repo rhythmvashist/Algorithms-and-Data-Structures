@@ -39,8 +39,7 @@ class Solution {
             if(grid[i][j]=='1'){
               count++;
               bfstraversal(grid,i,j);
-            }
-            
+            } 
           }
         }
         return count;

@@ -3,8 +3,10 @@ def judgeCircle(self, moves):
   :type moves: str:
   rtype: bool      
   """
+
   x=0
   y=0
+  
    moves=moves.upper()
         for char in moves:
             if char == 'R'

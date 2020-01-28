@@ -26,17 +26,4 @@ def dub_step(str):
 
   print(out)
 
-     
-
-        
-
-
-  
-
-
-
-
-
-
-
 dub_step('WUBWEWUBAREWUBWUBTHEWUBCHAMPIONSWUBMYWUBFRIENDWUB')
