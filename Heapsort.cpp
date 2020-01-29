@@ -1,7 +1,8 @@
 //@author:Rhythm Vashist
-/*this file implements a heap sort that sorts the array with nlogn complexity and constant space complexity
-
+/*
+this file implements a heap sort that sorts the array with nlogn complexity and constant space complexity
 */
+
 #include <iostream>
 using namespace std;
 
@@ -19,6 +20,7 @@ void printArray(int arr[],int size){
 	cout<<endl;
 }
 
+
 // this method check if any node node satisfy the max heap condition
 bool satisfyHeap(int arr[],int root){
 	int rootelem=arr[root];
@@ -29,6 +31,7 @@ bool satisfyHeap(int arr[],int root){
 	}
 	return false;
 }
+
 
 // this methods helps us to arrange in way to implement a max heap data structure.
 void makeHeap(int arr[],int size,int rootIndex){
@@ -54,6 +57,7 @@ void makeHeap(int arr[],int size,int rootIndex){
 	}
 }
 
+
 // this method takes the index and returns the root element of the element at that index
 int getParent(int index){
 	return (index/2)-1;
@@ -75,14 +79,13 @@ void heapSort(int arr[],int size){
 
 
 int main(){
-
 	int arr[5]={10,20,2,45,1};
 	int size=5;
 
 	cout<<"Initial Array :";
-   printArray(arr,size);
+    printArray(arr,size);
 	heapSort(arr,size);
 	cout<<"Final Array :";
-  printArray(arr,size);
+    printArray(arr,size);
 	return 0;
 }
