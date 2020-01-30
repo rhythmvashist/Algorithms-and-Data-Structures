@@ -64,8 +64,7 @@ int getParent(int index){
 }
 
 // this method uses makeHeap method to make max heap and then takes the root element and keep swaping it with the last elemtn in the array and at the end sort the whole array.
-void heapSort(int arr[],int size){
-	
+void heapSort(int arr[],int size){	
   int root=getParent(size);
 	for(;root>=0;root--){
 		makeHeap(arr,size,root);
