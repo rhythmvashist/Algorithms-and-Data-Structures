@@ -5,7 +5,7 @@
 // For example, given the array [13, 18, 25, 2, 8, 10] and the element 8, return 4 (the index of 8 in the array).
 
 int getPivot(int arr[]){
-    return 0
+    return 0;
 }
 
 
