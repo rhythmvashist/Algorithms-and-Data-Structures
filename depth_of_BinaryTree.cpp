@@ -33,12 +33,13 @@ public:
         int left = maxDepth(root->left);
         int right = maxDepth(root->right);
 
-        return 1+maximum(left,right);     
+        return 1 + maximum(left,right);     
     }
 
     int maxDepth(TreeNode* root) {
         return getHeight(root);
           
     }
+
 };
 

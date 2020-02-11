@@ -10,6 +10,8 @@ using namespace std;
 void graphSolution(bool graph[V][V],int k){
     cout<<" hello"
 }
+
+
 int main(){
     bool graph[V][V] = {{0, 1, 1, 1}, {1, 0, 1, 0}, {1, 1, 0, 1}, {1, 0, 1, 0} }; 
     int k = 3
