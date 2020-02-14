@@ -15,4 +15,4 @@ def getmaxProduct():
         
   print (maxprod)
 
-main()
+getmaxProduct()

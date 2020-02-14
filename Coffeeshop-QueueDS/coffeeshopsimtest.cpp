@@ -1,5 +1,3 @@
-
-#include "coffeeshopsim.h"
 #include "coffeeshopsim.cpp"
 #include <iostream>
 #include <ctime>
