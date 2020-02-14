@@ -1,8 +1,10 @@
-#include <iostream>
+
 #include "coffeeshopsim.h"
 #include "coffeeshopsim.cpp"
+#include <iostream>
 #include <ctime>
 #include <cmath>
+
 
 // struct for a customer containing the time and the money
 struct customer{
@@ -35,6 +37,7 @@ int main(){
 void letsgetstarted(){
     srand(time(0));
     Queue <customer>que;//creating object of queue class
+
     int choice;
     cout<<"Press 0 if u want to enter customers one by one"<<endl;
     cout<<"Press 1 if u want to generate random customers"<<endl;
@@ -55,6 +58,7 @@ void letsgetstarted(){
     }
 }
 
+
 //function 2- this is a void function  that imports the queue class object
 // this function asks the user  to enter the customers one by one and enter -1  when he is done
 // it furthur calls function 5 for simultaing money and time
@@ -73,7 +77,6 @@ void entercustomers(Queue<customer> & que){
         que.enqueue(cstmr);
     }
     simulatetime(que); //calling function 5
-    
 }
 
 //function 3- this is a void function  that imports the queue class object
@@ -110,7 +113,6 @@ void premadecustomer(Queue<customer> & que){
 
 // adjust time
 void simulatetime(Queue<customer> & que){
-	
 	//run  queue is here 
     int numofcashiers=0;
     cout<<"Enter the number of cashiers  at the shop "<<endl;
