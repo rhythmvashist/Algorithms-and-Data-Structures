@@ -13,12 +13,15 @@ struct Node {
 using edges_t = vector<array<int, 2>>;
 using graph_t = vector<edges_t>;
 
+
 // if a function of this type returns true, graph traversal will be interrupted
 using edge_cb = bool(*)(vector<Node>&, int, int, int);
+
 
 inline bool isNegativeCycle(vector<Node>& nodes, int u, int v, int w) {
   return nodes[v].d > nodes[u].d + w;
 }
+
 
 inline bool relaxNode(vector<Node>& nodes, int u, int v, int w) {
   // Relaxation
@@ -29,6 +32,7 @@ inline bool relaxNode(vector<Node>& nodes, int u, int v, int w) {
 
   return false;
 }
+
 
 // returns true if the traversal was successful
 bool traverseAllEdges(const graph_t& graph, vector<Node>& nodes, edge_cb cb) {
@@ -44,6 +48,7 @@ bool traverseAllEdges(const graph_t& graph, vector<Node>& nodes, edge_cb cb) {
   }
   return true;
 }
+
 
 bool bellmanFord(const graph_t& graph, int src, int dst, vector<int>& path) {
   const int len = graph.size();
@@ -74,6 +79,7 @@ bool bellmanFord(const graph_t& graph, int src, int dst, vector<int>& path) {
   return true;
 }
 
+
 int main() {
   graph_t graph(5, edges_t(3));
   
@@ -84,6 +90,7 @@ int main() {
   graph[4] = {{0, 2}, {2, 7}};
 
   vector<int> path;
+  
   
   if (bellmanFord(graph, 0, 2, path)) {
     for (const int& v : path) {
