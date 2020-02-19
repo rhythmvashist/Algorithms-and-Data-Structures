@@ -24,11 +24,8 @@ def longestCommonPrefix(strs) :
         result+=c
     return result
 
-def main():
+
+if __name__ == "__main__":
     string_list =["flower","flow","flight"]
     result = longestCommonPrefix(string_list)
     print(result)
-
-
-if __name__ == "__main__":
-    main()
