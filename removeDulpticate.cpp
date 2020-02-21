@@ -20,14 +20,13 @@ int removeDuplicates(vector<int>& nums) {
             set<int> result;
             for(int i=0;i<nums.size();i++){
                 int x=nums[i];
-                cout<<x<<endl;
                 // that means element is not present 
                 if(result.find(x)==result.end() ){
-                    
                     result.insert(x);
-                    cout<<"inserting :"<<x<<endl;
                 }   
             }
+
+            for(int yresult) cout <<y<<endl;
             return result.size();
         
 }
