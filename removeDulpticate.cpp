@@ -37,6 +37,6 @@ int main(){
     input.push_back(1);
     input.push_back(2);
     int result = removeDuplicates(input);
-    cout<<result<<endl;
+    cout<<result<<endl;w    
     return 0;
 }
