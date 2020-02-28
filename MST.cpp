@@ -17,6 +17,7 @@ public:
         second=s;
         weight=w;
     }
+
     int getF(){
         return first;
     }
@@ -28,6 +29,7 @@ public:
     int getW(){
         return  weight;
     }
+    
 private:
     int first;
     int second;
@@ -94,7 +96,6 @@ void traversal(vector<vector<Edge> > &ve,int id,bool isvisited[]){
 }
 
 // try to traverse the tree
-
 bool isJoint(vector<vector<Edge> > ve,int no){
     bool visited[no];
     initilaiseBool(visited,no);
