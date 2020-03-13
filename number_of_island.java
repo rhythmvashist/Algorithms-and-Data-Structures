@@ -19,6 +19,7 @@ Input:
 
 Output: 3
 */
+
 class Solution {
   public void bfstraversal(char [][] grid, int i ,int j){
       if(i < 0 || j< 0|| j>=grid[i].length||i >=grid.length||grid[i][j]=='0'){
