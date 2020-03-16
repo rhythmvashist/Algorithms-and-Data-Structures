@@ -1,3 +1,5 @@
+''' This program goes over a 2d array to find a word return true if it finds the word or else it return false '''
+
 class Solution(object):
     def dfs(self,board,i,j,count,word):
       if len(word) == count:
