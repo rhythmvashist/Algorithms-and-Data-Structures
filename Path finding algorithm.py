@@ -2,7 +2,6 @@ import sys
 
 # Function to find out which of the unvisited node 
 # needs to be visited next
-
 def to_be_visited():
   global visited_and_distance
   v = -10

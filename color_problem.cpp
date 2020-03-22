@@ -14,8 +14,7 @@ void graphSolution(bool graph[V][V],int k){
 
 int main(){
     bool graph[V][V] = {{0, 1, 1, 1}, {1, 0, 1, 0}, {1, 1, 0, 1}, {1, 0, 1, 0} }; 
-    int k = 3
-
+    int k = 3;
     return 0;
 }
 

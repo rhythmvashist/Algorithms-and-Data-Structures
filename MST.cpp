@@ -166,8 +166,8 @@ void reverseKurshal(vector<vector<Edge> > ve,vector<Edge> list,int no){
                 ve[fst].erase(ve[fst].begin()+i);
             }
         }
+        
         //ve[fst]=removeElement(ve[fst],index);
-
         for(int i=0;i<ve[sec].size();i++){
             Edge t=ve[sec][i];
             if(t.getW()==wg){
@@ -176,10 +176,8 @@ void reverseKurshal(vector<vector<Edge> > ve,vector<Edge> list,int no){
                 ve[sec].erase(ve[sec].begin()+i);
             }
         }
+        
         //ve[sec].erase(ve[sec].begin()+index);
-
-
-
         if(rm1&&rm2&&isJoint(ve,sizel)){
             cout<<"remove:"<<fst<<" " <<sec<<" "<<wg<<endl;
             rm1=false;
@@ -214,8 +212,6 @@ void reverseKurshal(vector<vector<Edge> > ve,vector<Edge> list,int no){
     }
     */
 }
-
-
 
 vector<vector<Edge> > generateGraph(string file,vector<Edge> &list){
     int no=0;

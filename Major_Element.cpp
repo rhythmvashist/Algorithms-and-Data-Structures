@@ -22,4 +22,5 @@ public:
         }
     }
     return nums[index];
-}
+  }
+};
