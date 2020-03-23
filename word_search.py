@@ -9,8 +9,11 @@ class Solution(object):
         return False
 
       temp_val = board[i][j]
+      
+      # set each element that it visit to as empty character 
       board[i][j] = ' '
       result =  dfs(board,i+1,j,count+1,word) or dfs(board,i-1,j,count+1,word) or dfs(board,i,j+1,count+1,word) or dfs(board,i,j-1,count+1,word)
+      # set the element back to its original value
       board[i][j] = temp_val
       return result
     
