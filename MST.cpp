@@ -41,7 +41,7 @@ private:
 void printList(vector<vector<Edge> >ve){
     for(int i=0;i<ve.size();i++){
         for(int j=0;j<ve[i].size();j++){
-            if(i>ve[i].at(j).getS())
+            if(i > ve[i].at(j).getS())
                 cout<<i<<"  "<<ve[i][j].getS()<<" " <<ve[i].at(j).getW()<<endl;
         }
     }
