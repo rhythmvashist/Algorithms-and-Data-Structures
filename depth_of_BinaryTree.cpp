@@ -37,8 +37,7 @@ public:
     }
 
     int maxDepth(TreeNode* root) {
-        return getHeight(root);
-          
+        return getHeight(root);   
     }
 
 };

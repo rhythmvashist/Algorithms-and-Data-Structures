@@ -118,7 +118,6 @@ char touppercase(char key){
     if(key>='a'&&key<='z'){
         key=key-('a'-'A');
     }
-
     return key;
 }
 
