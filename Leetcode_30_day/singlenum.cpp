@@ -10,7 +10,7 @@
 
 
 
-#include <bits/stdc++.h> 
+# include <bits/stdc++.h> 
 using namespace std;
 
 
@@ -31,6 +31,7 @@ int singleNumber(int nums[],int n)
     return 2 * (sum1) - sum2; 
 } 
 
+//check if the elem count is one then return the numbr else return -99
 int getSingleNumber(int nums[],int n){
   map<int,int> m;
 
@@ -42,9 +43,21 @@ int getSingleNumber(int nums[],int n){
       return nums[i];
     }
   }
-  return 0;
+  return -99;
 }
-  
+
+
+// using XOR to solve this situation (1 ^ 1 = 0)
+int singleNumber(int nums[],int size) {
+        int res = nums[0];
+        for(int i=1;i < nums.size();i++){
+            res = res ^ nums[i];
+        }
+        return res;
+       
+    }  
+
+
 // Driver code 
 int main() 
 { 
