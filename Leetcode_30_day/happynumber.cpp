@@ -12,6 +12,10 @@
 // 62 + 82 = 100
 // 12 + 02 + 02 = 1
 
+#include <iostream>
+#include <set>
+using namespace std;
+
 class Solution {
     
 public:
@@ -26,7 +30,7 @@ public:
     }
     
     bool isHappy(int n) {        
-       unordered_set<int> visited;
+       set<int> visited;
         while(n!=1){
             int x = getsq(n);
             if(visited.count(x)){
