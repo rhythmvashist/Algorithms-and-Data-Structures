@@ -25,6 +25,7 @@ class Solution {
       if(i < 0 || j< 0|| j>=grid[i].length||i >=grid.length||grid[i][j]=='0'){
           return ;
         }
+        
         grid[i][j]= '0';
         bfstraversal(grid,i+1,j);
         bfstraversal(grid,i,j+1);

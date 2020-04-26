@@ -19,8 +19,6 @@ def climbingLeaderboard(scores, alice):
     return rank_list
 
 
-
-
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
     scores_count = int(input())
