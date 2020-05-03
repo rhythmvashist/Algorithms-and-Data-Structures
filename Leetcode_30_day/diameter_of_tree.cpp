@@ -24,7 +24,23 @@
  */
 class Solution {
 public:
+    int getHeight(TreeNode* root){
+        if(root == nullptr){
+            return 0;
+        }
+        return 1+max(getHeight(root->left),getHeight(root->right));
+    }
+    
     int diameterOfBinaryTree(TreeNode* root) {
+        if (root==nullptr){
+            return 0;
+        }
+        int left = getHeight(root->left);
+        int right= getHeight(root->right);
         
+        int ldia= diameterOfBinaryTree(root->left);
+        int rdia = diameterOfBinaryTree(root->right);
+        
+        return max(left+right,max(ldia,rdia));
     }
 };
