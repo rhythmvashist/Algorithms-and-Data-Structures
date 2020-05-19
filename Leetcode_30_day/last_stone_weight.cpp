@@ -32,9 +32,11 @@ int lastStoneWeight(vector<int>& stones) {
     if(stones.size()==0){
         return 0;
     }
+    
     if (stones.size()==1){
         return stones[0];
     }
+
     sort(stones.begin(),stones.end());
     for(int i = stones.size()-1;i>0;i--){
         int first = stones[i];
