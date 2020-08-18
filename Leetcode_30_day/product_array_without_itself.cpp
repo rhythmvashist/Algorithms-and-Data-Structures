@@ -14,7 +14,6 @@ Could you solve it with constant space complexity? (The output array does not co
 
 */
 
-
 #include <iostream>
 #include <vector>
 using namespace std;
