@@ -18,7 +18,6 @@ Could you solve it with constant space complexity? (The output array does not co
 #include <vector>
 using namespace std;
 
-
 vector<int> productExceptSelf(vector<int>& nums) {
     int size = nums.size();
     vector<int> ans(size) ;
@@ -42,6 +41,7 @@ vector<int> productExceptSelf(vector<int>& nums) {
             ans[i]=product/nums[i];
         }
     }
+    
     else if(zeroc==1){
         for(int i=0;i<size;i++){
             if(nums[i]==0){
