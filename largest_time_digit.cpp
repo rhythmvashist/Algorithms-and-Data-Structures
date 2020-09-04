@@ -17,6 +17,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+
 using namespace std;
 
 void getPermutation(string str, int low, int high, vector<string> &res)
